@@ -1,0 +1,72 @@
+<style>
+        body {
+            margin: 0;
+        }
+
+        .hidden {
+            display: none !important
+        }
+
+        h1 {
+            color: white;
+            font-size: 36px;
+        }
+        h2 {
+            color: whitesmoke;
+            font-size: 36px;
+            margin: 2px;
+        }
+        h3 {
+            color: yellow;
+            font-size: 20px;
+            
+            text-decoration: none;
+        }
+
+
+        .winner {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            height: 100vh;
+            width: 100vw;
+        }
+        .loser {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            height: 100vh;
+            width: 100vw;
+        }
+        .timer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            height: 100vh;
+            width: 100vw;
+            color: fuchsia;
+        }
+        .timerWrap {
+            font-size: large;
+        }
+
+        .restart {
+            color: whitesmoke;
+        }
+        .rules {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            height: 100vh;
+            width: 100vw;
+    </style>
