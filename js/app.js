@@ -217,12 +217,20 @@ Events.on(engine, 'collisionStart', evt => {
             document.querySelector('.timer').classList.add('hidden')
            document.querySelector('.winner').classList.remove('hidden');
            timerFlag = true;
-           document.addEventListener('click', ()=>{
+           resetGame();
+           /* document.addEventListener('click', ()=>{
                location.reload();
-           })
+           }) */
         }
     })
 })
+//relaod the page on end game 
+
+const resetGame = () => {
+    setTimeout(()=>{
+        location.reload();
+    },3000)
+};
 
 let startGameFlag = false;
 let timerFlag = false;
@@ -243,9 +251,7 @@ function gameOver() {
   document.querySelector('.timer').classList.add('hidden')
   document.querySelector('.loser').classList.remove('hidden');
   World.remove(world, goal)
-  document.addEventListener('click', ()=>{
-    location.reload();
-})
+  resetGame();
 
 
   

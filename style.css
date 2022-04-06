@@ -1,16 +1,23 @@
-<style>
+
         body {
-            margin: 0;
-            margin-left: -2px;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden; 
+            width: 100%;
         }
 
+        
+
         .hidden {
-            display: none !important
+            display: none !important;
+        
+
         }
 
         h1 {
             color: white;
             font-size: 36px;
+            
         }
         h2 {
             color: whitesmoke;
@@ -71,4 +78,3 @@
             z-index: 1;
             height: 100vh;
             width: 100vw;
-    </style>
