@@ -128,8 +128,9 @@ horizontals.forEach((row, rowIndex)=> {
             unitLengthX,
             1,
             {isStatic: true,
-            label: 'wall'
-            }
+            label: 'wall',
+            render: {fillStyle: '#FF00FF'}
+            },
         );
         World.add(world, wall)
     })
@@ -145,7 +146,9 @@ verticals.forEach((row, rowIndex)=> {
             1,
             unitLengthY,
             {isStatic: true,
-            label: 'wall'}
+            label: 'wall',
+            render: {fillStyle: '#FF00FF'}
+            }
         );
         World.add(world, wall)
     })
@@ -280,10 +283,13 @@ function start() {
     },2000)
 } */
 
+//select level
+
 document.addEventListener('click', () => {
     startGameFlag = true;
     start()}
     );
+
 
 //things to add
 //user input to set difficulty (generate more rows, columns, reduce time)
